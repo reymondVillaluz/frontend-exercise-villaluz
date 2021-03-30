@@ -1,0 +1,13 @@
+<ul ngbNav #nav="ngbNav" style="background-color: #e2e3e5;">
+  <li ngbNavItem>
+    <a ngbNavLink routerLink="/employee-list">Employee List</a>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink routerLink="/employee-add">Add New</a>
+  </li>
+</ul>
+<app-toast></app-toast>
+<div style="display:flex; flex-grow: 1; justify-content: center; align-items: center; margin-top: 30px;">
+  <router-outlet aria-live="polite" aria-atomic="true"></router-outlet>
+</div>
+

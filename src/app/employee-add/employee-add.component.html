@@ -1,0 +1,25 @@
+<div style="width: 100%;">
+  <form [formGroup]="formGroup" class="form-container">
+    <div class="form-field-container">
+      <label for="id">Employee Id</label>
+      <input class="form-control" type="text" id="id" name="id" formControlName="id">
+    </div>
+
+    <div class="form-field-container">
+      <label for="firstName">First Name</label>
+      <input class="form-control" type="text" id="firstName" name="firstName" formControlName="firstName">
+    </div>
+
+    <div class="form-field-container">
+      <label for="lastName">Last Name</label>
+      <input class="form-control" type="text" id="lastName" name="lastName" formControlName="lastName">
+    </div>
+
+    <div class="form-field-container">
+      <label for="email">Email</label>
+      <input class="form-control" type="email" id="email" name="email" formControlName="email">
+    </div>
+  </form>
+  <button class="btn btn-success"  type="button" (click)="saveEmployee()">Submit</button>
+</div>
+

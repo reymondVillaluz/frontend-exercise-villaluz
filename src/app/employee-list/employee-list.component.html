@@ -1,0 +1,19 @@
+<div *ngFor="let employee of employees" style="padding:10px 20px; border: 1px gray solid; margin: 10px;">
+  <div style="display: flex;">
+    <label for="id" style="margin-right: 5px; font-weight: 600">Employee Id:</label>
+    <span id="id">{{employee.id}}</span>
+  </div>
+  <div style="display: flex;">
+    <label for="firstName" style="margin-right: 5px; font-weight: 600">First Name</label>
+    <span id="firstName">{{employee.firstName}}</span>
+  </div>
+  <div style="display: flex;">
+    <label for="lastName" style="margin-right: 5px; font-weight: 600">Last Name</label>
+    <span id="lastName">{{employee.lastName}}</span>
+  </div>
+  <div style="display: flex;">
+    <label for="lastName" style="margin-right: 5px; font-weight: 600">Email</label>
+    <span id="email">{{employee.email}}</span>
+  </div>
+  <button type="button" class="btn btn-danger" (click)="delete(employee.id)">Delete</button>
+</div>

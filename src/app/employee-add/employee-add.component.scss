@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  min-width: 350px;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .form-field-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .btn-success {
+    margin-top: 20px;
+  }
+}
+
+
